@@ -1,0 +1,6 @@
+name,age,salary,department
+alice,20,20000,HR
+bob,18,23000,Engineering
+charlie,,90000,HR
+donald,21,,Printing
+ava,19,10000,data
