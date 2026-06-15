@@ -1,0 +1,25 @@
+!pip install seaborn
+!pip install matplotlib
+
+import pandas as pd
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+data = pd.read_csv("clean_data.csv")
+
+
+sns.countplot(x='age',data=data)
+plt.title('age distribution')
+plt.show()
+
+sns.countplot(x='salary',data=data)
+plt.title('salary distribution')
+plt.show()
+
+sns.countplot(x='department',data=data)
+plt.title('department distribution')
+plt.show()
+
+sns.heatmap(data[['age','salary']].corr(),annot=True, cmap='coolwarm', linewidths=0.5)
+plt.title('correlation heatmap')
+plt.show()
